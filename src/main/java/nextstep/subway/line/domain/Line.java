@@ -6,7 +6,6 @@ import nextstep.subway.section.domain.Sections;
 import nextstep.subway.station.domain.Station;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
@@ -86,8 +85,7 @@ public class Line extends BaseEntity {
         values.add(section);
     }
 
-    public boolean isContainingStation(Station station){
+    public boolean isContainingStation(Station station) {
         return getStations().contains(station);
-    };
-
+    }
 }
